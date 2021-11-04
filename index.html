@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <TItle>Starbucks Coffe</TItle>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> 
+        <div class="circle">
+        </div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é apenas um Café <br>É <span> Starbucks</span> </h2>
+                <p>Voltando ao que amamos juntos
+                    Queridos clientes, partners e amigos, estamos acompanhando a situação atual do Brasil em relação ao COVID-19, focados na segurança e bem estar dos nossos partners (como chamamos os nossos colaboradores) e clientes. Seguimos os critérios de quarentena de cada munícipo que temos lojas. As lojas abertas ou com entrega via delivery, através do nosso parceiro Rappi, estão seguindo as orientações das autoridades de saúde.</p>
+                    <a href="#">Saiba mais</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="img1.png" class="starbucks">
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img.png');"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"></a><img src="facebook.png"></li>
+            <li><a href="#"></a><img src="twitter.png"></li>
+            <li><a href="#"></a><img src="instagram.png"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
